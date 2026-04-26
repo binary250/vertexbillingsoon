@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Vertex Billing helps Indian shop owners manage billing, udhaar, GST reports and accounts easily. Built for small businesses & traders.">
+  <meta name="robots" content="index, follow">
+  <title>Vertex Billing — Smart Billing & Accounting Software for Indian Businesses</title>
+  <link rel="canonical" href="https://vertexbilling.vercel.app/">
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:title" content="Vertex Billing — Smart Billing Software">
+  <meta property="og:description" content="Simple billing, udhaar tracking & GST reports for Indian businesses.">
+  <meta property="og:url" content="https://vertexbilling.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050b1a">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Vertex Billing",
+    "description": "Offline-first billing and accounting software for Indian small businesses and traders.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Windows",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "availability": "https://schema.org/PreOrder" }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="bg-canvas"></div>
+  <div class="grid-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <div>
+        <div class="logo">Vertex Billing</div>
+        <div class="logo-sub">Simple accounting that works even without internet.</div>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="menuBtn">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="status-badge">
+      <span class="pulse-dot"></span>
+      Early Access Open • Limited Spots
+    </div>
+
+    <div class="hero-eyebrow">Something Big is Coming</div>
+
+    <h1>
+      <span class="line">Billing That</span>
+      <span class="line word-glow">Just Works.</span>
+      <span class="line word-gold">Offline.</span>
+    </h1>
+
+    <p class="hero-desc">
+      Forget cloud subscriptions and complicated software.
+      Vertex Billing puts your sales, purchases, udhaar &amp; GST reports
+      right on your machine — no internet needed, ever.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat-pill">
+        <span class="stat-val">100%</span>
+        <span class="stat-lbl">Offline</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-val">GST</span>
+        <span class="stat-lbl">Ready</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-val">₹0</span>
+        <span class="stat-lbl">Cloud Cost</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-val">1-min</span>
+        <span class="stat-lbl">Setup</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-wrapper">
+    <div class="countdown-card">
+      <div class="countdown-label">⚡ Launching In</div>
+      <div class="countdown-grid">
+        <div class="cd-item">
+          <span class="cd-num" id="days">00</span>
+          <span class="cd-lbl">Days</span>
+        </div>
+        <div class="cd-item">
+          <span class="cd-num" id="hours">00</span>
+          <span class="cd-lbl">Hours</span>
+        </div>
+        <div class="cd-item">
+          <span class="cd-num" id="minutes">00</span>
+          <span class="cd-lbl">Minutes</span>
+        </div>
+        <div class="cd-item">
+          <span class="cd-num" id="seconds">00</span>
+          <span class="cd-lbl">Seconds</span>
+        </div>
+      </div>
+      <div class="launch-bar">
+        🚀 Expected Launch: <strong>August 15, 2026</strong> &nbsp;·&nbsp; Join now to lock early-bird pricing
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <section class="form-section" id="waitlist">
+    <div class="form-header">
+      <span class="section-tag">✦ Early Access</span>
+      <h2>Reserve Your Spot</h2>
+      <p>Join 500+ business owners waiting for Vertex Billing</p>
+    </div>
+
+    <div class="form-card">
+      <div class="benefits-row">
+        <div class="benefit-chip"><span class="tick">✓</span> Save ₹1,000 — early-bird price</div>
+        <div class="benefit-chip"><span class="tick">✓</span> Priority support, first 6 months</div>
+        <div class="benefit-chip"><span class="tick">✓</span> Free onboarding & training</div>
+        <div class="benefit-chip"><span class="tick">✓</span> Shape features for your business</div>
+      </div>
+
+      <div class="form-divider"></div>
+
+      <form id="waitlistForm" action="https://formspree.io/f/xeoynvrl" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Business Email</label>
+          <input type="email" id="email" name="email" placeholder="you@business.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Mobile Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        <div class="form-group">
+          <label for="business">Business Type</label>
+          <select id="business" name="business_type" required>
+            <option value="">Select your business type</option>
+            <option value="Trader / Wholesaler">Trader / Wholesaler</option>
+            <option value="Kirana / Grocery">Kirana / Grocery Shop</option>
+            <option value="Construction Supplier">Construction Material Supplier</option>
+            <option value="Manufacturer">Small Manufacturer / Brick Kiln</option>
+            <option value="Retail Shop">Retail Shop (Non-POS)</option>
+            <option value="Other">Other Credit-Based Business</option>
+          </select>
+        </div>
+        <input type="hidden" name="_redirect" value="thankyou.html">
+
+        <button type="submit" class="submit-btn">🚀 Join Early Access — Limited Spots</button>
+      </form>
+
+      <div class="form-footer">
+        <span class="flag">🇮🇳</span>
+        Made in India &nbsp;·&nbsp; Your data stays on your machine, always
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="features-header">
+      <span class="section-tag">✦ Features</span>
+      <h2>Why Choose Vertex Billing?</h2>
+      <p>Professional tools built for the way Indian businesses actually work</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+            <line x1="6" y1="1" x2="6" y2="4" />
+            <line x1="10" y1="1" x2="10" y2="4" />
+            <line x1="14" y1="1" x2="14" y2="4" />
+          </svg>
+        </div>
+        <h3>Offline First, Always</h3>
+        <p>Works completely without internet. No subscription, no cloud. Your business data stays on your computer —
+          forever.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+            <line x1="1" y1="10" x2="23" y2="10" />
+          </svg>
+        </div>
+        <h3>Udhaar / Credit Ledger</h3>
+        <p>Track customer credit accounts automatically. Send payment reminders and keep complete transaction histories
+          with ease.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+        </div>
+        <h3>GST-Ready Invoices</h3>
+        <p>Generate GST-compliant invoices with CGST/SGST/IGST split. Export reports for filing in minutes, not hours.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23" />
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+          </svg>
+        </div>
+        <h3>Profit & Loss Reports</h3>
+        <p>Real-time P&amp;L, balance sheets and cash flow statements. Know exactly where your business stands at any
+          moment.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+            <line x1="12" y1="22.08" x2="12" y2="12" />
+          </svg>
+        </div>
+        <h3>Stock / Inventory</h3>
+        <p>Track stock levels, get low-stock alerts, and manage purchase orders. Never run out of your best-selling
+          products again.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+        </div>
+        <h3>Your Data, Your Control</h3>
+        <p>No cloud servers, no data leaks. Automatic backups to your own drives. Full ownership of everything you
+          enter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-emoji">⚡</span>
+        <h4>Instant Setup</h4>
+        <p>Be billing within 60 seconds. No complex configuration required.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-emoji">🇮🇳</span>
+        <h4>Made for India</h4>
+        <p>Hindi UI, Indian tax laws, GST rules — built for how you work.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-emoji">🔒</span>
+        <h4>100% Private</h4>
+        <p>All data stays on your computer. We never see your business info.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-emoji">💰</span>
+        <h4>One-Time Price</h4>
+        <p>Pay once. Use forever. No monthly fees, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXIT MODAL -->
+  <div class="exit-modal" id="exitModal">
+    <div class="exit-card">
+      <h3>Wait — Don't Miss This!</h3>
+      <p class="exit-sub">Early access members get our best-ever price. Offer expires at launch.</p>
+
+      <div class="price-display">
+        <div>
+          <span class="big-price">₹2,999</span>
+          <span class="was-price">₹4,999</span>
+        </div>
+        <span class="save-tag">You save ₹2,000 🎉</span>
+      </div>
+
+      <ul class="exit-benefits">
+        <li><span class="ck">✓</span> Lifetime free software updates</li>
+        <li><span class="ck">✓</span> Priority support for 1 year</li>
+        <li><span class="ck">✓</span> Free onboarding & training session</li>
+      </ul>
+
+      <button class="exit-cta-btn" onclick="goToWaitlist()">Join Early Access & Save ₹2,000</button>
+      <p class="exit-note">Available for early access members only</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">Vertex Billing</div>
+          <p>Simple, powerful offline billing software designed for Indian small businesses, traders, and shopkeepers
+            who want control of their data.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <div class="footer-links">
+            <a href="#features">Features</a>
+            <a href="#waitlist">Early Access</a>
+            <a href="#">Pricing</a>
+            <a href="#">Roadmap</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <div class="footer-links">
+            <a href="#">Help Center</a>
+            <a href="#">Contact Us</a>
+            <a href="#">WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Vertex Billing. Made with ❤️ in India.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── COUNTDOWN ── */
+    const launchDate = new Date("2026-08-15T10:00:00+05:30").getTime();
+    const els = { days: document.getElementById("days"), hours: document.getElementById("hours"), minutes: document.getElementById("minutes"), seconds: document.getElementById("seconds") };
+    let prev = {};
+
+    function setWithFlip(el, val) {
+      if (prev[el.id] !== val) {
+        el.textContent = val;
+        el.classList.remove("flip");
+        void el.offsetWidth;
+        el.classList.add("flip");
+        prev[el.id] = val;
+      }
+    }
+
+    function updateCountdown() {
+      const dist = launchDate - Date.now();
+      if (dist <= 0) { Object.values(els).forEach(e => e.textContent = "00"); return; }
+      const d = Math.floor(dist / 86400000);
+      const h = Math.floor((dist / 3600000) % 24);
+      const m = Math.floor((dist / 60000) % 60);
+      const s = Math.floor((dist / 1000) % 60);
+      setWithFlip(els.days, String(d).padStart(2, "0"));
+      setWithFlip(els.hours, String(h).padStart(2, "0"));
+      setWithFlip(els.minutes, String(m).padStart(2, "0"));
+      setWithFlip(els.seconds, String(s).padStart(2, "0"));
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    /* ── MOBILE MENU ── */
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+      menuBtn.textContent = navMenu.classList.contains("open") ? "✕" : "☰";
+    });
+    navMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      navMenu.classList.remove("open"); menuBtn.textContent = "☰";
+    }));
+
+    /* ── SMOOTH SCROLL ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", e => {
+        const t = document.querySelector(a.getAttribute("href"));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: "smooth", block: "start" }); }
+      });
+    });
+
+    /* ── FORM SUBMIT ── */
+    document.getElementById("waitlistForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const biz = document.getElementById("business");
+      if (!biz.value) { alert("Please select your business type"); biz.focus(); return; }
+      const name = document.getElementById("name").value.trim();
+      if (name) localStorage.setItem("waitlistUserName", name);
+      localStorage.setItem("joinedWaitlist", "true");
+      fetch(e.target.action, { method: "POST", body: new FormData(e.target), headers: { Accept: "application/json" } }).catch(() => { });
+      window.location.href = "thankyou.html";
+    });
+
+    /* ── EXIT POPUP ── */
+    if (localStorage.getItem("joinedWaitlist") !== "true") {
+      const modal = document.getElementById("exitModal");
+      let shown = false;
+      const show = () => { if (!shown) { modal.style.display = "flex"; shown = true; } };
+      document.addEventListener("mouseleave", e => { if (e.clientY <= 0 && window.innerWidth > 768) show(); });
+      if (window.innerWidth <= 768) {
+        setTimeout(show, 9000);
+        window.addEventListener("scroll", () => { if (window.scrollY > 200) show(); }, { passive: true, once: true });
+      }
+      window.goToWaitlist = () => {
+        modal.style.display = "none";
+        document.getElementById("waitlist").scrollIntoView({ behavior: "smooth", block: "center" });
+      };
+    }
+
+    /* ── SEASONAL SNOW ── */
+    (function () {
+      const d = new Date(); const m = d.getMonth() + 1; const day = d.getDate();
+      const isXmas = m === 12 && day >= 24 && day <= 30;
+      const isNY = (m === 12 && day === 31) || (m === 1 && day === 1);
+      if (!isXmas && !isNY) return;
+      const snow = document.createElement("div"); snow.id = "snowfall"; document.body.appendChild(snow);
+      for (let i = 0; i < 60; i++) {
+        const f = document.createElement("span"); f.innerHTML = "❄";
+        f.style.left = Math.random() * 100 + "vw";
+        f.style.fontSize = 10 + Math.random() * 12 + "px";
+        f.style.opacity = Math.random();
+        f.style.animationDuration = 6 + Math.random() * 10 + "s";
+        snow.appendChild(f);
+      }
+    })();
+  </script>
+</body>
+
+</html>
