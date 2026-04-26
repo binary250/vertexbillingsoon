@@ -887,6 +887,23 @@
      margin-bottom: 24px;
  }
 
+ .close-btn {
+     position: absolute;
+     top: 14px;
+     right: 16px;
+     background: transparent;
+     border: none;
+     font-size: 1.4rem;
+     color: #7a90b0;
+     cursor: pointer;
+     transition: color 0.2s, transform 0.2s;
+ }
+
+ .close-btn:hover {
+     color: #ffffff;
+     transform: scale(1.1);
+ }
+
  .price-display {
      background: var(--gold-soft);
      border: 1px solid rgba(246, 201, 14, 0.2);
